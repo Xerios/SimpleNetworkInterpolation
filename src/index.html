@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>game prototype</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #333;
+			font: 13px Helvetica, Arial;
+			color:#FFF;
+		}  
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		#chatbox { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+		#chatbox input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+		#chatbox button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+		#chatbox #messages { list-style-type: none; margin: 0; padding: 0; }
+		#chatbox #messages li { padding: 5px 10px; }
+		#chatbox #messages li:nth-child(odd) { background: #eee; }
+	</style>
+	<script src="js/phaser.min.js"></script>
+	<script src="js/socketiop2p.min.js"></script>
+	<script src="player.js"></script>
+	<script src="game.js"></script>
+	<script src="app.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//rawgit.com/mrdoob/stats.js/master/build/stats.min.js';document.head.appendChild(script);})()
+	</script>
+</head>
+<body>
+</body>
+</html>
